@@ -19,15 +19,15 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/" component={HomeScreen} exact />
-          <Route path="/products" component={ProductScreen} />
+          <Route path="/queen-mobiles-admin" component={HomeScreen} exact />
+          <Route path="/queen-mobiles-admin/products" component={ProductScreen} />
           {/* <Route path="/category" component={CategoriesScreen} /> */}
-          <Route path="/orders" component={OrderScreen} />
-          <Route path="/order" component={OrderDetailScreen} />
-          <Route path="/addproduct" component={AddProduct} />
-          <Route path="/users" component={UsersScreen} />
-          <Route path="/product/:id/edit" component={ProductEditScreen} />
-          <Route path="/login" component={Login} />
+          <Route path="/queen-mobiles-admin/orders" component={OrderScreen} />
+          <Route path="/queen-mobiles-admin/order" component={OrderDetailScreen} />
+          <Route path="/queen-mobiles-admin/addproduct" component={AddProduct} />
+          <Route path="/queen-mobiles-admin/users" component={UsersScreen} />
+          <Route path="/queen-mobiles-admin/product/:id/edit" component={ProductEditScreen} />
+          <Route path="/queen-mobiles-admin/login" component={Login} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>

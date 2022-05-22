@@ -9,7 +9,7 @@ const MainProducts = () => {
       <div className="content-header">
         <h2 className="content-title">Products</h2>
         <div>
-          <Link to="/addproduct" className="btn btn-primary">
+          <Link to="/queen-mobiles-admin/addproduct" className="btn btn-primary">
             Create new
           </Link>
         </div>

@@ -1,18 +1,20 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
+import Logo from "../assets/images/logo.svg";
+
 const Sidebar = () => {
   return (
     <div>
       <aside className="navbar-aside" id="offcanvas_aside">
         <div className="aside-top">
-          <Link to="/" className="brand-wrap">
+          <Link to="/queen-mobiles-admin" className="brand-wrap">
             <img
-              src="/images/logo.svg"
+              src={Logo}
               style={{ height: "46" }}
               className="logo"
               alt="Company logo"
-            />  
+            />
             <span className="companyName"><b>QM-AdminPanel</b></span>
           </Link>
           <div>
@@ -21,14 +23,14 @@ const Sidebar = () => {
             </button>
           </div>
         </div>
-       
+
         <nav>
           <ul className="menu-aside">
             <li className="menu-item">
               <NavLink
                 activeClassName="active"
                 className="menu-link"
-                to="/"
+                to="/queen-mobiles-admin"
                 exact={true}
               >
                 <i className="icon fas fa-home"></i>
@@ -39,7 +41,7 @@ const Sidebar = () => {
               <NavLink
                 activeClassName="active"
                 className="menu-link"
-                to="/products"
+                to="/queen-mobiles-admin/products"
               >
                 <i className="icon fas fa-shopping-bag"></i>
                 <span className="text">Products</span>
@@ -49,7 +51,7 @@ const Sidebar = () => {
               <NavLink
                 activeClassName="active"
                 className="menu-link"
-                to="/addproduct"
+                to="/queen-mobiles-admin/addproduct"
               >
                 <i className="icon fas fa-cart-plus"></i>
                 <span className="text">Add product</span>
@@ -69,7 +71,7 @@ const Sidebar = () => {
               <NavLink
                 activeClassName="active"
                 className="menu-link"
-                to="/orders"
+                to="/queen-mobiles-admin/orders"
               >
                 <i className="icon fas fa-bags-shopping"></i>
                 <span className="text">Orders</span>
@@ -79,7 +81,7 @@ const Sidebar = () => {
               <NavLink
                 activeClassName="active"
                 className="menu-link"
-                to="/users"
+                to="/queen-mobiles-admin/users"
               >
                 <i className="icon fas fa-user"></i>
                 <span className="text">Users</span>
