@@ -7,12 +7,12 @@ module.exports = {
   mode: "development",
   entry: "./client/index.js",
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, "src/main/resources/static"),
     compress: true,
     port: 9000,
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "src/main/resources/static"),
     filename: "queen-mobiles-admin.bundle.js",
     clean: true,
   },
@@ -40,8 +40,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      publicPath: "/static",
-      template: "./client/index.html",
+      publicPath: "/queen-mobiles-admin/static",
+      template: "./src/main/resources/templates/index.html",
       filename: "queen-mobiles-admin.html",
       favicon: "./client/assets/images/logo.svg"
     }),
