@@ -1,15 +1,12 @@
 package com.queen.mobiles.admin.lib.user;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Builder
-@Getter
-@Setter
+@Data
 public class User {
     private String id;
-    private String name;
+    private String firstName;
+    private String lastName;
     private String address;
     private String city;
     private String pincode;

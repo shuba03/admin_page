@@ -19,24 +19,26 @@ export default class App extends React.Component {
     super(props);
   }
 
-  componentDidMount = () => {  
-   
+  componentDidMount = () => {
+
   }
 
   render() {
-    return (   <Router>
-      <Switch>
-        <Route path="/queen-mobiles-admin" component={HomeScreen} exact />
-        <Route path="/queen-mobiles-admin/products" component={ProductScreen} />
-        {/* <Route path="/category" component={CategoriesScreen} /> */}
-        <Route path="/queen-mobiles-admin/orders" component={OrderScreen} />
-        <Route path="/queen-mobiles-admin/order" component={OrderDetailScreen} />
-        <Route path="/queen-mobiles-admin/addproduct" component={AddProduct} />
-        <Route path="/queen-mobiles-admin/users" component={UsersScreen} />
-        <Route path="/queen-mobiles-admin/product/:id/edit" component={ProductEditScreen} />
-        <Route path="/queen-mobiles-admin/login" component={Login} />
-        <Route path="*" component={NotFound} />
-      </Switch>
-    </Router>)
+    return (
+      <Router>
+        <Switch>
+          <Route path="/queen-mobiles-admin" component={HomeScreen} exact />
+          <Route path="/queen-mobiles-admin/products" component={ProductScreen} />
+          {/* <Route path="/category" component={CategoriesScreen} /> */}
+          <Route path="/queen-mobiles-admin/orders" component={OrderScreen} />
+          <Route path="/queen-mobiles-admin/order" component={OrderDetailScreen} />
+          <Route path="/queen-mobiles-admin/addproduct" component={AddProduct} />
+          <Route path="/queen-mobiles-admin/users" component={UsersScreen} />
+          <Route path="/queen-mobiles-admin/product/:id/edit" component={ProductEditScreen} />
+          <Route path="/queen-mobiles-admin/login" component={Login} />
+          <Route path="*" component={NotFound} />
+        </Switch>
+      </Router>
+    );
   }
 }

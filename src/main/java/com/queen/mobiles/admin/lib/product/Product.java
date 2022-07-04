@@ -1,19 +1,21 @@
 package com.queen.mobiles.admin.lib.product;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 
-@Builder
-@Getter
+@Data
 public class Product {
-    String id;
-    String name;
-    String color;
 
-    String brand;
-    float price;
+    private String id;
+    private String name;
+    private String description;
+    private String brand;
+    private String color;
 
-    String description;
+    private double price;
 
-    int stock;
+    private boolean addedInCart;
+    private boolean addedInFav;
+
+    private double overallRating;
+    private int totalReviews;
 }

@@ -1,19 +1,23 @@
 package com.queen.mobiles.admin.lib.order;
 
-import com.queen.mobiles.admin.lib.product.Product;
+import java.util.List;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 
-@Builder
-@Getter
+@Data
 public class OrderItem {
-    private String orderItemId;
 
-    private Product product;
-    
-    private int quantity;
+    private String id;
+    private String dateTime;
 
-    private float unitPrice;
-    private float price;
+    private String address;
+
+    private double totalPrice;
+
+    private String status;
+    private String userId;
+
+    private int productCount;
+
+    private List<OrderDetailItem> details;
 }

@@ -55,7 +55,7 @@ const Orders = () => {
             <span className="badge btn-dark">Not Delivered</span>
           </td>
           <td className="d-flex justify-content-end align-item-center">
-            <Link to={`/order`} className="text-success">
+            <Link to={`/queen-mobiles-admin/order`} className="text-success">
               <i className="fas fa-eye"></i>
             </Link>
           </td>
